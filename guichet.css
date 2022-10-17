@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: rgb(97, 61, 230);
+    font-weight: bold;
+}
+
+.submit {
+    background-color: rgb(97, 61, 230);
+    color: white;
+    font-weight: bold;
+}
+
+.submit:hover {
+    color: white;
+}
+
+.login {
+    min-width: 200px;
+}
+
+.logomtn, .logoinsta, .logoorange, .logomoov {
+    background-color: red;
+    height: 60px;
+    border: 1px inside green;
+    width: 60px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.logoinsta {
+    background: url("4.png");
+}
+
+.logomtn {
+    background: url("mtnmomo.jpg");
+}
+
+.logoorange {
+    background: url("orange_money.jpeg");;
+}
+
+.logomoov {
+    background: url("moov.png");;
+}
+
+.img {
+    position: inherit;
+}

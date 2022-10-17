@@ -1,0 +1,245 @@
+:root {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #f6f9fc;
+    font-size: 14px;
+    color: #7184ad;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.welcome_message span {
+    color: #613de6;
+    font-weight: bold;
+}
+
+.my_funds {
+    color: #613de6;
+}
+
+/* Couleur de fond pour les icons et les boutons */
+.my_account, .submit, .copy, .account {
+    background-color: #613de6;
+}
+
+/* Couleur des titres */
+.h5, .name, .welcome_message h4, .info_update, .stats_amount, .title_color {
+    color: #1f2c73;
+}
+
+.list-unstyled a {
+    color: #7184ad;
+}
+
+
+.list-unstyled .active {
+    border-bottom: #1f2c73;
+    color: #1f2c73;
+    padding-bottom: 3px;
+}
+
+/* Nos Icones */
+i, .link_breadcrumb {
+    color: #613de6;
+}
+
+.account {
+    font-size: 20px;
+    padding: 2px 5px;
+}
+
+/* Notre QR Code */
+
+.qr_code_button {
+    font-size: 16px;
+}
+
+.qr_code {
+    font-size: 250px;
+    margin-left: 10px;
+}
+
+/* Supprimer les caret devant les toggles */
+
+.dropdown-toggle:after { content: none }
+
+  /*--------------------------------------------------------------
+  # Main
+  --------------------------------------------------------------*/
+  #main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+  }
+  @media (max-width: 1199px) {
+    #main {
+      padding: 20px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Page Title
+  --------------------------------------------------------------*/
+  .pagetitle {
+    margin-bottom: 10px;
+  }
+  .pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #012970;
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: blue;
+    color: #fff;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    .dropdown-menu-arrow::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background: #fff;
+      position: absolute;
+      top: -7px;
+      right: 20px;
+      transform: rotate(45deg);
+      border-top: 1px solid #eaedf1;
+      border-left: 1px solid #eaedf1;
+    }
+  }
+  @-webkit-keyframes dropdown-animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+  @keyframes dropdown-animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+  
+  /* Breadcrumbs */
+  .breadcrumb {
+    font-size: 13px;
+    font-family: "Nunito", sans-serif;
+    color: #899bbd;
+    font-weight: 600;
+    margin-left: 120px;
+  }
+  .breadcrumb a {
+    color: #899bbd;
+    transition: 0.3s;
+  }
+  .breadcrumb a:hover {
+    color: #613de6;
+  }
+  .breadcrumb .breadcrumb-item::before {
+    color: #899bbd;
+  }
+  .breadcrumb .active {
+    color: #613de6;
+    font-weight: 600;
+  }
+  
+  /* Bordered Tabs */
+  .nav-tabs-bordered {
+    border-bottom: 2px solid #ebeef4;
+  }
+  .nav-tabs-bordered .nav-link {
+    margin-bottom: -2px;
+    border: none;
+    color: #899bbd;
+  }
+  .nav-tabs-bordered .nav-link:hover, .nav-tabs-bordered .nav-link:focus {
+    color: #613de6;
+  }
+  .nav-tabs-bordered .nav-link.active {
+    background-color: #fff;
+    color: #613de6;
+    border-bottom: 2px solid #4154f1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Profie Page
+  --------------------------------------------------------------*/
+  .profile .profile-card img {
+    max-width: 120px;
+  }
+  .profile .profile-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c384e;
+    margin: 10px 0 0 0;
+  }
+  .profile .profile-card h3 {
+    font-size: 18px;
+  }
+  .profile .profile-card .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    color: rgba(1, 41, 112, 0.5);
+    line-height: 0;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  .profile .profile-card .social-links a:hover {
+    color: #012970;
+  }
+  .profile .profile-overview .row {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .profile .profile-overview .card-title {
+    color: #012970;
+  }
+  .profile .profile-overview .label {
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+  }
+  .profile .profile-edit label {
+    font-weight: 600;
+    color: rgba(1, 41, 112, 0.6);
+  }
+  .profile .profile-edit img {
+    max-width: 120px;
+  } 
